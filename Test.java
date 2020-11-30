@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main
+public class Test
 {
     public static int fib(int n)
     {
