@@ -1,18 +1,17 @@
 import java.util.*;
+ 
 public class RandomNumber{
-	public static void main(String args[])
-	{
-		Scanner in = new Scanner(System.in);
-		int n = in.nextInt();
-		int m = in.nextInt();
-		int k = in.nextInt();
-		List<Integer>ss = new ArrayList<Integer>();
-		Random rand = new Random(k);
-		for(int i = 0;i < n;i++)
-		{
-			ss.add(rand.nextInt(m));
-			if(i==n-1)
-				System.out.println(ss.get(i));
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		int m=scan.nextInt();
+		int k=scan.nextInt();
+		scan.close();
+		Random s=new Random(k);
+		int temp=0;
+		for(int i=1;i<=n;i++) {
+			temp=s.nextInt(m);
 		}
+		System.out.println(temp);
 	}
 }
