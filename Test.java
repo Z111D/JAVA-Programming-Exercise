@@ -18,11 +18,13 @@ public class Test
             {
                 int num = Integer.valueOf(in.nextLine());
                 for(int i = 1;i <= num;i++)
-                if(i == 1)
-                    System.out.print("1");
-                else
-                    System.out.print(" " + fib(i));
-                System.out.println();
+                {
+                    if(i == 1)
+                        System.out.print("1");
+                    else
+                        System.out.print(" " + fib(i));
+                    System.out.println();
+                }
             }
             else if(opt.equals("sort"))
             {
