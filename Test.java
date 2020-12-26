@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Test
+public class Main
 {
     public static int fib(int n)
     {
@@ -23,8 +23,8 @@ public class Test
                         System.out.print("1");
                     else
                         System.out.print(" " + fib(i));
-                    System.out.println();
                 }
+                System.out.println();
             }
             else if(opt.equals("sort"))
             {
